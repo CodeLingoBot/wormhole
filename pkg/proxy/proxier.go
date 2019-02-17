@@ -359,7 +359,7 @@ type Proxier struct {
 	ns netns.NsHandle
 }
 
-// NOTE(vish): this ns probably should be part of the Service struct
+// SetNs: NOTE(vish): this ns probably should be part of the Service struct
 func (proxier *Proxier) SetNs(ns netns.NsHandle) {
 	proxier.ns = ns
 }
